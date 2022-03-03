@@ -20,7 +20,7 @@ mongoose
     console.log("Database Connected!");
   })
   .catch((err) => {
-    res.status(500).json({ error: err });
+    console.log(err)
   });
 
 const storage = multer.diskStorage({
