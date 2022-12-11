@@ -144,7 +144,7 @@ app.delete('/post/:id',(req, res) => {
   
 })
 
-const server = app.listen(process.env.PORT,process.env.IP);
+const server = app.listen(3001);
 
 const io = require("socket.io")(server);
 io.on("connection", () => {
